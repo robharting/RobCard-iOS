@@ -23,13 +23,12 @@ struct InfoView: View {
                     Text(text)
                         .font(Font.custom("Roboto-Bold", size: 20))
                         .bold()
+                        .foregroundColor(Color(red: 0.02, green: 0.32, blue: 0.87, opacity: 1.0))
                 })
             .padding(.all)
     }
 }
 
-
-#Preview {
+#Preview (traits: .sizeThatFitsLayout) {
     InfoView(text:"hello", imageName: "phone.fill")
-        .previewLayout(.sizeThatFits)
 }
